@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="jumbotron">
+      <h1 class="display-4">Validate a Tweet</h1>
+      <p class="lead">This is a simple app for validating if a covid-19 related rumour is plausible or invalid. Type
+        your hearsay below and we will let you know how real it is:</p>
+      <hr class="my-4">
+
+      <form (submit)="validateTweet()">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="userText" placeholder="Type your text here"
+            [(ngModel)]="userText">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" (click)="validateTweet()"
+              [disabled]="userText.length < 4 || httpLoading">
+              Validate
+              <span class="spinner-border spinner-border-sm" role="status" *ngIf="httpLoading"></span>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <ng-container *ngIf="probability">
+        <p class="lead">This statement is...</p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-info">
+                <h4>Real</h4>
+              </div>
+              <div class="card-footer">
+                Probability: <h5><span class="badge badge-info">{{probability.real | number:'1.2-2'}}%</span></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header border-warning">
+                <h4>Fake</h4>
+              </div>
+              <div class="card-footer">
+                Probability: <h5><span class="badge badge-warning">{{probability.fake | number:'1.2-2'}}%</span></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>

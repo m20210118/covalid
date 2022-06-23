@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Covalid", "Covalid.csproj", "{92DF05E8-182F-4374-8908-D853FC91D532}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92DF05E8-182F-4374-8908-D853FC91D532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92DF05E8-182F-4374-8908-D853FC91D532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92DF05E8-182F-4374-8908-D853FC91D532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92DF05E8-182F-4374-8908-D853FC91D532}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCE62EC1-BAD8-470F-ACA0-3F3EDAA1C83D}
+	EndGlobalSection
+EndGlobal

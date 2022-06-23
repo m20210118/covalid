@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-lg-12">
+        <input type="text" class="form-control" placeholder="Enter Tweet Id" [(ngModel)]="tweetIds">
+        <button class="btn btn-primary" type="submit" (click)="getMultipleTweets()">Get Tweet</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <p>{{ iteration }}</p>
+        <button class="btn btn-primary" type="submit" (click)="downloadTweets()">Download Tweets</button>
+    </div>
+</div>
